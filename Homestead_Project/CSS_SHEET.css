@@ -1,0 +1,20 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    background: url(E:\will2019\Homestead_Project\Homestead_Project\Images\background.jpg);
+    background-size:cover;
+    background-position:center;
+
+}
+
+.login-box{
+    width:320px;
+    height:420px;
+    background:rgba(0,0,0,0.4);
+    color:#fff;
+    top:50%;
+    left:50%;
+    position: absolute;
+    transform:translate(-50%, -50%);
+
+}
