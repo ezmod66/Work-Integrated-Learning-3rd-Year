@@ -1,20 +1,287 @@
-﻿body {
+﻿@import "bourbon";
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600);
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Montserrat|Nanum+Gothic|Open+Sans+Condensed:300|Titillium+Web|Ubuntu&display=swap');
+
+
+body {
     margin: 0;
     padding: 0;
-    background: url(E:\will2019\Homestead_Project\Homestead_Project\Images\background.jpg);
-    background-size:cover;
-    background-position:center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.login-box {
+    width: 420px;
+    height: 320px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+    color: #000000;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding: 70px 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu-box {
+    width: 300px;
+    height: 150px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+    padding: 40px 30px;
+    font-family: 'Montserrat', sans-serif;
+    top: 36%;
+    left: 16%;
+    position: absolute;
+}
+.lblHeadings {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 20px;
+    color: lightgreen;
+   
+}
+
+.lbldescription {
+    text-align: justify;
+   
+}
+
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px)
+}
+
+h2 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+h1 {
+    font-family: Verdana;
+    text-align: center;
+    font-size: 30px;
+    padding: 0 0 20px;
+}
+.form {
+    max-width: 800px;
+    padding: 10px 20px;
+    background: #fff;
+    margin: 10px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+}
+legend {
+    font: normal 20px 'Montserrat', sans-serif;
+ 
+    margin-bottom: 5px;
+}
+.label {
+    display: block;
+    font: 15px Arial, Helvetica, sans-serif;
+    color: #888;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+}
+.number {
+    background:rgb(255, 216, 0);
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    border-radius: 15px 15px 15px 0px;
+}
+.form fieldset {
+    border: none;
+}
+
+
+.textInputs {
+    font-family: 'Montserrat', sans-serif;
+    background: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    margin: 0;
+    outline: 0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background-color: #fff;
+    color: #8a97a0;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
 
 }
 
-.login-box{
-    width:320px;
-    height:420px;
-    background:rgba(0,0,0,0.4);
-    color:#fff;
-    top:50%;
-    left:50%;
+.line{
+    display:inline;
+}
+    .textInputs:focus {
+        background: #d2d9dd;
+    }
+
+.submitButton {
+    position: relative;
+    display: block;
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    margin: 0 auto;
+    background: rgb(255, 216, 0);
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    width: 100%;
+    border: 1px solid rgb(255, 216, 0);
+    
+    border-width: 1px 1px 3px;
+    margin-bottom: 10px;
+}
+
+.submitButton {
+    background: rgb(255, 216, 0);
+    
+}
+
+.inner-wrap {
+    padding: 30px;
+    background: #F8F8F8;
+    border-radius: 6px;
+    margin-bottom: 15px;
+	
+
+}
+
+
+
+.lblEmail, .lblPassword {
+
+    color: #000000;
+}
+
+.txtEmail, .txtPassword, .btnLogIn{
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.txtEmail, .txtPassword {
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    height: 40px;
+    color: #000000;
+    font-size: 15px;
+    background-color: transparent;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, .5);
+    color: #000000;
+}
+
+.btnLogIn {
+    border: none;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+    background-color: rgb(255, 9, 9);
+    cursor:pointer;
+    border-radius:20px;
+    transition: .3s ease-in-out;
+}
+
+.btnLogIn:hover{
+    background-color:rgb(255, 217, 9);
+}
+
+.activities-box {
+    width: 1200px;
+    height: auto;
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+    color: #000000;
+   margin-left:800px;
+  padding:30px;
     position: absolute;
-    transform:translate(-50%, -50%);
+    transform: translate(-45%, -40%);
+    font-family: Helvetica, sans-serif;
+    margin-top: 200px;
+    text-align:center;
+}
+
+.attendance-box {
+    width: 2500px;
+    height: auto;
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+    color: #000000;
+    margin:100px;
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    
+    padding: 20px;
+}
+
+.monthly-attendance-box {
+    width: 1400px;
+    height: auto;
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+    color: #000000;
+    margin: 100px;
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+}
+
+.gridview {
+    width: 1400px;
+}
+
+.activityAttendance-box {
+    width: 1200px;
+    height: auto;
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+    color: #000000;
+    top: 90%;
+    left: 54%;
+    position: absolute;
+    transform: translate(-45%, -40%);
+    font-family: Helvetica, sans-serif;
+    margin-top: 200px;
+}
+#name{
+    
+}
+
+.errorMessage {
+    text
+    testcolor: LavenderBlush;
 
 }

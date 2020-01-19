@@ -61,11 +61,92 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Activity_Attendance_Register.aspx" />
+    <Content Include="Add_Child_Details.aspx" />
+    <Content Include="Activities.aspx" />
+    <Content Include="App_Data\FINAL_WILL_DATABASE.mdf" />
+    <Content Include="App_Data\FINAL_WILL_DATABASE_log.ldf">
+      <DependentUpon>FINAL_WILL_DATABASE.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\Will-Database.mdf" />
+    <Content Include="App_Data\Will-Database_log.ldf">
+      <DependentUpon>Will-Database.mdf</DependentUpon>
+    </Content>
+    <Content Include="AttendanceRecord_Per_Child.aspx" />
     <Content Include="CSS_SHEET.css" />
+    <Content Include="Daily_Attendance_Register.aspx" />
+    <Content Include="HOME_PAGE.aspx" />
+    <Content Include="JS_FILE.js" />
     <Content Include="LOG_IN.aspx" />
+    <Content Include="Monthly_Attendance_Report.aspx" />
+    <Content Include="Planner.aspx" />
+    <Content Include="Point_System.aspx" />
+    <Content Include="Register_New_User.aspx" />
+    <Content Include="Report.aspx" />
+    <Content Include="StyleSheet1.css" />
+    <Content Include="StyleSheet2.css" />
+    <Content Include="Update_Child_Details.aspx" />
+    <Content Include="View_Child_Details.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Activity.cs" />
+    <Compile Include="Activity_Attendance_Register.aspx.cs">
+      <DependentUpon>Activity_Attendance_Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Activity_Attendance_Register.aspx.designer.cs">
+      <DependentUpon>Activity_Attendance_Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Address.cs" />
+    <Compile Include="Add_Child_Details.aspx.cs">
+      <DependentUpon>Add_Child_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Add_Child_Details.aspx.designer.cs">
+      <DependentUpon>Add_Child_Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Activities.aspx.cs">
+      <DependentUpon>Activities.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Activities.aspx.designer.cs">
+      <DependentUpon>Activities.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AttendanceRecord_Per_Child.aspx.cs">
+      <DependentUpon>AttendanceRecord_Per_Child.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AttendanceRecord_Per_Child.aspx.designer.cs">
+      <DependentUpon>AttendanceRecord_Per_Child.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Birthdate.cs" />
+    <Compile Include="ChildClass.cs" />
+    <Compile Include="ChildFullName.cs" />
+    <Compile Include="CourtOrderDates.cs" />
+    <Compile Include="Daily_Attendance_Register.aspx.cs">
+      <DependentUpon>Daily_Attendance_Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Daily_Attendance_Register.aspx.designer.cs">
+      <DependentUpon>Daily_Attendance_Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DB_Manager.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="Employee_Status.cs" />
+    <Compile Include="Facility.cs" />
+    <Compile Include="Family.cs" />
+    <Compile Include="FillComboBox.cs" />
+    <Compile Include="Gender.cs" />
+    <Compile Include="HOME_PAGE.aspx.cs">
+      <DependentUpon>HOME_PAGE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HOME_PAGE.aspx.designer.cs">
+      <DependentUpon>HOME_PAGE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobRole.cs" />
+    <Compile Include="LegalStatus.cs" />
     <Compile Include="LOG_IN.aspx.cs">
       <DependentUpon>LOG_IN.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -73,15 +154,94 @@
     <Compile Include="LOG_IN.aspx.designer.cs">
       <DependentUpon>LOG_IN.aspx</DependentUpon>
     </Compile>
+    <Compile Include="MonthlyPlanner.cs" />
+    <Compile Include="Monthly_Attendance_Report.aspx.cs">
+      <DependentUpon>Monthly_Attendance_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Monthly_Attendance_Report.aspx.designer.cs">
+      <DependentUpon>Monthly_Attendance_Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Nationality.cs" />
+    <Compile Include="Person.cs" />
+    <Compile Include="Planner.aspx.cs">
+      <DependentUpon>Planner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Planner.aspx.designer.cs">
+      <DependentUpon>Planner.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PlannerClass.cs" />
+    <Compile Include="Point_System.aspx.cs">
+      <DependentUpon>Point_System.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Point_System.aspx.designer.cs">
+      <DependentUpon>Point_System.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Register_New_User.aspx.cs">
+      <DependentUpon>Register_New_User.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register_New_User.aspx.designer.cs">
+      <DependentUpon>Register_New_User.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Relationship.cs" />
+    <Compile Include="Report.aspx.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report.aspx.designer.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="School.cs" />
+    <Compile Include="Shelter.cs" />
+    <Compile Include="SocialWorker.cs" />
+    <Compile Include="Statutory.cs" />
+    <Compile Include="Treatment.cs" />
+    <Compile Include="Update_Child_Details.aspx.cs">
+      <DependentUpon>Update_Child_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Update_Child_Details.aspx.designer.cs">
+      <DependentUpon>Update_Child_Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View_Child_Details.aspx.cs">
+      <DependentUpon>View_Child_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View_Child_Details.aspx.designer.cs">
+      <DependentUpon>View_Child_Details.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
